@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <title>Awesome!</title>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -41,12 +44,9 @@
 
       .greeting {
         line-height: 280px;
-
       }
 
       .css-typing {
-        margin-left: 7%;
-
         vertical-align: middle;
         display: inline-block;
         font-size: 3em;
@@ -64,19 +64,128 @@
       @-webkit-keyframes type{
         from { width: 0; }
       }
+
+      .nav {
+        color: black;
+      }
+
+      .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+        color: red;
+      }
+
+      .nav-pills>li>a {
+        color: black;
+      }
+      .navbar-toggle {
+        color: black;
+      }
     </style>
   </head>
   <body>
     <div class="container-fluid">
       <div class="row">
+        <div class="col-md-12">
+
+          <div class="navbar-header">
+            <button type="button" class="glyphicon glyphicon-menu-hamburger navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+
+
+          <div class="collapse navbar-collapse" id="myNavbar">
+
+            <ul class="nav nav-pills">
+              <li class="active"><a data-toggle="pill" href="#about">About</a></li>
+              <li><a data-toggle="pill" href="#blog">Blog</a></li>
+              <li><a data-toggle="pill" href="#portfolio">Portfolio</a></li>
+              <li><a data-toggle="pill" href="#contact">Contact</a></li>
+            </ul>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
         <div class="col-md-3">
           <img id='picture' class="img-responsive img-circle center-block" src="oval_me.jpg" alt="picture of Rick Bacci">
+          <p class="css-typing center-text">Problems. Solved.</p>
+
         </div>
         <div class="greeting col-md-4">
-          <p class="css-typing center-text">Problem. Solved.</p>
+          <p class="css-typing center-text">Problems. Solved.</p>
         </div>
         <div class="col-md-5">
         </div>
       </div>
+      <div class="row">
+        <div class="col-md-12">
+
+          <div class="tab-content">
+            <div id="about" class="tab-pane fade in active">
+              <h3>About</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div id="blog" class="tab-pane fade">
+              <h3>Blog</h3>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div id="portfolio" class="tab-pane fade">
+              <h3>Portfolio</h3>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            </div>
+            <div id="contact" class="tab-pane fade">
+              <h3>Contact</h3>
+              <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            </div>
+          </div>
+
+          <div class="navbar-header">
+            <button type="button" class="glyphicon glyphicon-menu-hamburger navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">WebSiteName</a>
+          </div>
+
+
+
+          <div class="collapse navbar-collapse" id="myNavbar">
+
+            <h2>Dynamic Pills</h2>
+            <ul class="nav nav-pills">
+              <li class="active"><a data-toggle="pill" href="#about">About</a></li>
+              <li><a data-toggle="pill" href="#blog">Blog</a></li>
+              <li><a data-toggle="pill" href="#portfolio">Portfolio</a></li>
+              <li><a data-toggle="pill" href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="tab-content">
+              <div id="about" class="tab-pane fade in active">
+                <h3>HOME</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <div id="blog" class="tab-pane fade">
+                <h3>Menu 1</h3>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+              <div id="portfolio" class="tab-pane fade">
+                <h3>Menu 2</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+              </div>
+              <div id="contact" class="tab-pane fade">
+                <h3>Menu 3</h3>
+                <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
