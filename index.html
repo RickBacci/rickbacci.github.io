@@ -20,30 +20,17 @@
 
     <style>
       body {
+        background-color: lightsteelblue;
         font-family: fantasy;
         color: black;
-
-        background: #596a72; /* Old browsers */
-        background: -moz-linear-gradient(left,  #596a72 0%, #cedce7 100%); /* FF3.6+ */
-        background: -webkit-gradient(linear, left top, right top, color-stop(0%,#596a72), color-stop(100%,#cedce7)); /* Chrome,Safari4+ */
-        background: -webkit-linear-gradient(left,  #596a72 0%,#cedce7 100%); /* Chrome10+,Safari5.1+ */
-        background: -o-linear-gradient(left,  #596a72 0%,#cedce7 100%); /* Opera 11.10+ */
-        background: -ms-linear-gradient(left,  #596a72 0%,#cedce7 100%); /* IE10+ */
-        background: linear-gradient(to right,  #596a72 0%,#cedce7 100%); /* W3C */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#596a72', endColorstr='#cedce7',GradientType=1 ); /* IE6-9 */
-
       }
       #picture {
         margin-top: 10px;
         margin-bottom: 10px;
         height: 20em;
+        border: ridge;
         border-color:gray;
         border-width: 2px;
-        border-style: ridge;
-      }
-
-      .greeting {
-        line-height: 280px;
       }
 
       .css-typing {
@@ -65,15 +52,33 @@
 
       .nav {
         color: black;
+        margin-top: 5px;
+        margin-bottom: 5px;
       }
 
-      .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
-        color: red;
+      .nav-pills>li.active>a, .nav-pills>li.active>a:focus {
+        color: black;
+        font-size: large;
+        font-style: bold;
+        background: transparent;
+
+
+      }
+
+      .nav-pills>li.active>a:hover {
+        font-size: large;
+        font-style: bold;
+        background: transparent;
+      }
+
+      .nav-pills>li>a:hover {
+        font-size: large;
+        font-style: bold;
+        background: transparent;
       }
 
       .nav-pills>li>a {
         color: black;
-
       }
 
       ul.nav.nav-pills {
@@ -117,15 +122,19 @@
       address {
         text-align: center;
       }
+
+      .first {
+        border: 5px;
+      }
     </style>
   </head>
   <body>
     <div class="container-fluid">
-      <div class="row">
+      <div class="first row">
         <div class="col-md-12 center-block">
           <div class="c_nav" id="myNavbar">
             <ul class="nav nav-pills">
-              <li class="active"><a data-toggle="pill" href="#about">About</a></li>
+              <li><a data-toggle="pill" href="#about">About</a></li>
               <li><a data-toggle="pill" href="#blog">Blog</a></li>
               <li><a data-toggle="pill" href="#portfolio">Portfolio</a></li>
               <li><a data-toggle="pill" href="#contact">Contact</a></li>
@@ -145,7 +154,7 @@
         <div class="col-md-3"></div>
         <div class="col-md-6">
           <div class="tab-content">
-            <div id="about" class="tab-pane fade in active">
+            <div id="about" class="tab-pane fade in">
               <h3>- About Me -</h3>
               <p>
                 Hello. My name is Rick Bacci. I am currently a student at Turing school of software & design
