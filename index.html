@@ -47,10 +47,8 @@
       }
 
       .css-typing {
-        vertical-align: middle;
-        display: inline-block;
-        font-size: 3em;
-        width: 8em;
+        font-size: 2.5em;
+        width: 10em;
         white-space:nowrap;
         overflow:hidden;
         -webkit-animation: type 6s steps(50, end);
@@ -75,116 +73,128 @@
 
       .nav-pills>li>a {
         color: black;
+
       }
-      .navbar-toggle {
-        color: black;
+
+      ul.nav.nav-pills {
+        display: inline-block; /* the key bit */
+        text-align: center
+
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+
+      .nav>li {
+        display: inline-block; /* the key bit */
+        text-align: center
+      ;
+        *display: inline; /* IE7 hack */
+        *zoom: 1; /* IE7 hack */
+      }
+
+      .c_nav {
+        margin-right: auto;
+        margin-left: auto;
+        
+
+        display: block;
+        text-align: center;
+      }
+
+      h3 {
+        text-align: center;
+
+      }
+      p {
+        text-align: center;
+        margin: 10px;
+      }
+
+      #bigger {
+        font-size: 2em;
+      }
+
+      address {
+        text-align: center;
       }
     </style>
   </head>
   <body>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-12">
-
-          <div class="navbar-header">
-            <button type="button" class="glyphicon glyphicon-menu-hamburger navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-          </div>
-
-
-
-          <div class="collapse navbar-collapse" id="myNavbar">
-
+        <div class="col-md-12 center-block">
+          <div class="c_nav" id="myNavbar">
             <ul class="nav nav-pills">
               <li class="active"><a data-toggle="pill" href="#about">About</a></li>
               <li><a data-toggle="pill" href="#blog">Blog</a></li>
               <li><a data-toggle="pill" href="#portfolio">Portfolio</a></li>
               <li><a data-toggle="pill" href="#contact">Contact</a></li>
             </ul>
-
-
           </div>
         </div>
       </div>
-
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
           <img id='picture' class="img-responsive img-circle center-block" src="oval_me.jpg" alt="picture of Rick Bacci">
-          <p class="css-typing center-text">Problems. Solved.</p>
-
+          <p class="css-typing center-block">Problems. Solved.</p>
         </div>
-        <div class="greeting col-md-4">
-          <p class="css-typing center-text">Problems. Solved.</p>
-        </div>
-        <div class="col-md-5">
-        </div>
+        <div class="col-md-4"></div>
       </div>
       <div class="row">
-        <div class="col-md-12">
-
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
           <div class="tab-content">
             <div id="about" class="tab-pane fade in active">
-              <h3>About</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <h3>- About Me -</h3>
+              <p>
+                Hello. My name is Rick Bacci. I am currently a student at Turing school of software & design
+                In Denver, CO. After I complete this rigorous 7 month training program, I plan on working for a company that will
+                challenge me at every turn, and help me to further grow as a software developer.
+              </p>
+              <p>
+                Do you have dreams? I can help you build them.
+              </p>
+              <p>
+                Are problems getting in your way? I can help fix them.
+              </p>
+              <p>
+                Solving problems isn't work when you love what you do.
+              </p>
+              <p>
+                <strong id="bigger">I love what I do.</strong>
+              </p>
+
             </div>
             <div id="blog" class="tab-pane fade">
-              <h3>Blog</h3>
-              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <h3>- Blog -</h3>
+              <p>
+                Coming soon!
+              </p>
             </div>
             <div id="portfolio" class="tab-pane fade">
-              <h3>Portfolio</h3>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+              <h3>- Portfolio -</h3>
+              <p>
+                <a href="https://github.com/RickBacci">My GitHub</a>
+              </p>
             </div>
             <div id="contact" class="tab-pane fade">
-              <h3>Contact</h3>
-              <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-            </div>
-          </div>
-
-          <div class="navbar-header">
-            <button type="button" class="glyphicon glyphicon-menu-hamburger navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">WebSiteName</a>
-          </div>
-
-
-
-          <div class="collapse navbar-collapse" id="myNavbar">
-
-            <h2>Dynamic Pills</h2>
-            <ul class="nav nav-pills">
-              <li class="active"><a data-toggle="pill" href="#about">About</a></li>
-              <li><a data-toggle="pill" href="#blog">Blog</a></li>
-              <li><a data-toggle="pill" href="#portfolio">Portfolio</a></li>
-              <li><a data-toggle="pill" href="#contact">Contact</a></li>
-            </ul>
-
-            <div class="tab-content">
-              <div id="about" class="tab-pane fade in active">
-                <h3>HOME</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              </div>
-              <div id="blog" class="tab-pane fade">
-                <h3>Menu 1</h3>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              </div>
-              <div id="portfolio" class="tab-pane fade">
-                <h3>Menu 2</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-              </div>
-              <div id="contact" class="tab-pane fade">
-                <h3>Menu 3</h3>
-                <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-              </div>
+              <h3>- Contact -</h3>
+              <p>
+              <address>
+                <strong>Rick Bacci</strong><br>
+                1255 19th Street #1403<br>
+                Denver, C0 80202<br>
+                <br>
+                <abbr title="Phone">P:</abbr> (216) 571-1397<br>
+                <br>
+                <a href="mailto:rick.bacci@gmail.com">rick.bacci@gmail.com</a>
+              </address>
+              </p>
             </div>
           </div>
         </div>
+        <div class="col-md-3"></div>
       </div>
     </div>
   </body>
