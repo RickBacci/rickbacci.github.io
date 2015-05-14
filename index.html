@@ -1,1 +1,82 @@
-Hello World!
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <title>Awesome!</title>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+      body {
+        font-family: fantasy;
+        color: black;
+
+        background: #596a72; /* Old browsers */
+        background: -moz-linear-gradient(left,  #596a72 0%, #cedce7 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%,#596a72), color-stop(100%,#cedce7)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(left,  #596a72 0%,#cedce7 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(left,  #596a72 0%,#cedce7 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(left,  #596a72 0%,#cedce7 100%); /* IE10+ */
+        background: linear-gradient(to right,  #596a72 0%,#cedce7 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#596a72', endColorstr='#cedce7',GradientType=1 ); /* IE6-9 */
+
+      }
+      #picture {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 20em;
+        border-color:gray;
+        border-width: 2px;
+        border-style: ridge;
+      }
+
+      .greeting {
+        line-height: 280px;
+
+      }
+
+      .css-typing {
+        margin-left: 7%;
+
+        vertical-align: middle;
+        display: inline-block;
+        font-size: 3em;
+        width: 8em;
+        white-space:nowrap;
+        overflow:hidden;
+        -webkit-animation: type 6s steps(50, end);
+        animation: type 6s steps(50, end);
+      }
+
+      @keyframes type{
+        from { width: 0; }
+      }
+
+      @-webkit-keyframes type{
+        from { width: 0; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3">
+          <img id='picture' class="img-responsive img-circle center-block" src="oval_me.jpg" alt="picture of Rick Bacci">
+        </div>
+        <div class="greeting col-md-4">
+          <p class="css-typing center-text">Problem. Solved.</p>
+        </div>
+        <div class="col-md-5">
+        </div>
+      </div>
+  </body>
+</html>
